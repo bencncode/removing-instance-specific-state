@@ -23,6 +23,8 @@
 
     <input type="submit" value="Login">
 </form>
-Instance number: <%= System.getProperty("instanceNumber") %>
+<div>Instance number:</div>
+<div><%= System.getenv("CF_INSTANCE_INDEX") %>
+</div>
 </body>
 </html>
